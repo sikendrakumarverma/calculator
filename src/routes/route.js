@@ -1,7 +1,6 @@
 const express = require("express")
 const router = express.Router()
 const controller = require("../controllers/controller")
-//const mid = require("../middleware/cacheMid")
 
 router.get("/test-me", function(req,res){
     res.send("api running")

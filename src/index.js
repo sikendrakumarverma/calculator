@@ -1,14 +1,8 @@
 const express = require("express")
-//const mongoose = require("mongoose")
 const app = express()
 const route = require("./routes/route")
 
 app.use(express.json())
-
-// mongoose.connect("mongodb+srv://sikendrakumar:wtCKMS5cQpIjdBOE@cluster0.oexuw0b.mongodb.net/group57Database",
-//     {useNewUrlParser:true}
-// ).then(()=>console.log("mongoDb is connected"))
-//     .catch((err)=>console.log(err))
 
 app.use("/",route)
 
