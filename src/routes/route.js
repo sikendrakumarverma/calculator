@@ -12,4 +12,6 @@ router.post("/operation", controller.operation);
 
 router.get("/undo", controller.undo);
 
+router.get("/reset", controller.reset);
+
 module.exports=router
